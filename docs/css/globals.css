@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --black: #0c120c;
+    --white: #ebebeb;
+    --silver: #8a8a8a;
+    --sage: #4e6e58;
+    --blue: #376996;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 5px;
+}
+
+h1 {
+    font-family: "Cinzel Decorative", 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+nav p {
+    font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#hero-container {
+    width: 80%;
+    height: 150px;
+    margin: 25px 0;
+}
+
+h2 {
+    font-family: "Cinzel Decorative", 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 45px;
+}
+
+#description-container {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+
+p {
+    font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--silver);
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 15px;
+    width: 80%;
+    height: auto;
+    margin: 25px 0;
+    padding: 10px;
+}
+
+.left-container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border: 2px solid black;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.top-card {
+    border: 2px solid black;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.bottom-card {
+    border: 2px solid black;
+    width: 100%;
+    height: 100px;
+}
